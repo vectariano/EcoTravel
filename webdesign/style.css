@@ -30,26 +30,21 @@ h3 {
 
 .first-section {
     background-image: 
-    linear-gradient(rgba(0, 0, 0, 0.4), 
-    rgba(0, 0, 0, 0.4)), 
-    /* radial-gradient(
-        closest-side,
-        transparent 70%,
-        #656a74
-    ), */
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
     url("img/aerial-photography-houses-green-field-viewing-mountain-white-gray-sky-daytime.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
 }
 
+
 .second-section {
     background-image: 
-    linear-gradient(rgba(0, 0, 0, 0.4), 
-    rgba(0, 0, 0, 0.4)), 
+    linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), 
     url("img/fabrizio-conti-9CfajiGQL0o-unsplash.jpg");
     background-repeat: no-repeat;
     background-size: cover;

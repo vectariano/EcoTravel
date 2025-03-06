@@ -41,19 +41,6 @@ h3 {
     height: 100vh;
 }
 
-
-.second-section {
-    background-image: 
-    linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), 
-    url("img/fabrizio-conti-9CfajiGQL0o-unsplash.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-}
-
 .circle {
     height: 130px;
     width: 130px;
@@ -348,4 +335,86 @@ input:checked ~ .h2 {
 
 .toggle:active {
     filter: brightness(120%);
+}
+
+/* Конец первой секции */
+
+.second-section {
+    background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), 
+    url("img/fabrizio-conti-9CfajiGQL0o-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    position: relative;
+    height: 100vh;
+}
+
+.about-title {
+    position: relative;
+    transform: translate(-50%);
+    top: 5%;
+    left: 50%;
+    color: #374a53;
+    
+}
+
+.info-container {
+    position: relative;
+    top: 20%;
+    left: 5%;
+    background-color: white;
+    height: 520px;
+    width: 420px;
+    border-radius: 15px;
+    justify-content: center;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.info-font {
+    font-family: 'Lancelot';
+    font-size: 30px;
+}
+
+.about-circle {
+    height: 100px;
+    width: 100px;
+    background-color: #2b3f48;
+    border-radius: 50%;
+    border: none;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-rect {
+    height: 220px;
+    width: 120px;
+    background: linear-gradient(to bottom ,
+    #2b3f48 0%,
+    #2b3f48 35%,
+    white 35%,
+    white 100%);
+    padding: 15px;
+    position: absolute;
+    border-radius: 20px;
+    justify-content: center;
+}
+
+.about-font-d {
+    position: absolute;
+    font-family: 'Lancelot';
+    font-size: 60px;
+    color: white;
+    z-index: 1;
+}
+
+
+.about-font-l {
+    position: absolute;
+    
+    font-family: 'Lancelot';
+    font-size: 30px;
 }

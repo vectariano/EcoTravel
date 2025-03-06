@@ -25,16 +25,25 @@ h3 {
     font-weight: 100;
     text-align: center;
 }
+
+/* Первая секция */
 .first-section {
     background-image: 
     linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
     url("img/aerial-photography-houses-green-field-viewing-mountain-white-gray-sky-daytime.jpg");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+@media(max-width: 900px) {
+    .first-section {
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 .circle {
@@ -79,6 +88,7 @@ h3 {
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 
 .rectanglelogo, .rectanglesearch {
@@ -95,7 +105,7 @@ h3 {
     background-color: rgba(217, 217, 217, 255);
     border-radius: 30px;
     border: none;
-    position: absolute;
+    position: fixed;
     transform: translate(-50%, -50%);
     display: flex;
     align-items: center;
@@ -108,7 +118,7 @@ h3 {
     background-color: rgba(82, 82, 82, 255);
     border-radius: 20px;
     border: none;
-    position: absolute;
+    position: fixed;
     transform: translate(-50%, -50%);
     display: flex;
     align-items: center;
@@ -122,7 +132,7 @@ h3 {
     background-color: rgba(82, 82, 82, 255);
     border-radius: 20px;
     border: none;
-    position: absolute;
+    position: fixed;
     transform: translate(-50%, -50%);
     display: flex;
     align-items: center;
@@ -197,8 +207,9 @@ input {
     transition: filter 0.2s linear;
 }
 
+
 .overlay {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -244,7 +255,7 @@ input:checked ~ .bigcircle, input:checked ~ .h2 {
 .toggle:active {
     filter: brightness(120%);
 }
-
+/* ---------------------------------------------------------------------------- */
 /* Конец первой секции */
 
 .second-section {

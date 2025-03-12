@@ -94,12 +94,20 @@ h3 {
     justify-content: center;
 }
 
-input ~ .rectanglesearch {
-    width: 240px;
+.rectanglesearch button {
+    background: none;
+    border: none;
+    border-color: none;
+    cursor: pointer;
+}
+
+.rectanglesearch input {
+    flex: 1;
     border: none;
     outline: none;
     background: none;
     font-size: 20px;
+    padding: 10px;
 }
 
 .rectangle3 {

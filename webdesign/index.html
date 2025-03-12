@@ -77,20 +77,41 @@
             </div>
 
             <!--Полигон для строки поиска-->
-            <div class="rectanglesearch" style="
+            <form class="rectanglesearch" style="
+            height: 90px;
+            width: 700px;
+            top: 13%;
+            left: 54%;
+            ">
+            <!--Иконка для поиска (лупа)-->
+                <label for="search" style="display: none;"></label>
+                <input type="search" id="search" placeholder="Search...">
+                <button type="submit">
+                    <img 
+                    src="img/search-interface-symbol.png"
+                    height="40px"
+                    width="40px"
+                    style="margin-left: 600px;">
+                </button>
+            </form>
+            <!-- <form action="https://www.google.com/search" method="GET" class="rectanglesearch"
+            style="
             height: 90px;
             width: 700px;
             top: 13%;
             left: 54%;">
-            <!--Иконка для поиска (лупа)-->
-                <input type="text">
-                <img 
-                src="img/search-interface-symbol.png"
-                height="40px"
-                width="40px"
-                style="margin-left: 600px;">
-            </div>
+                <input type="text" name="q" placeholder="Search" required>
+                <button type="submit">
+                    <img 
+                        src="img/search-interface-symbol.png"
+                        height="40px"
+                        width="40px"
+                        style="margin-left: 600px"
+                        alt="Search">
+                </button>
+            </form> -->
         </header>
+
         <main>
             <section class="first-section">
                 <div class="overlay"></div>

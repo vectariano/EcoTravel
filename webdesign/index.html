@@ -5,40 +5,66 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>EcoTravel</title>
         <link rel="stylesheet" href="style.css">
+        <style>
+            * {
+                margin: 0;
+            }
+
+            footer {
+                background-color: black;
+                height: 150px;
+                color: aqua;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .box {
+                font-size: 24px;
+                text-align: center;
+            }
+
+        </style>
     </head>
     <body>
-        <section class="first-section">
-            <div class="overlay"></div>
+        <header>
             <!--Добавление полигонов-->
             <!--Круги-->
             <button class="circle" style="
             top: 13%;
             left: 14%;">
             <!--Лого сайта-->
-                <img 
-                src="img/eco-tourism.png" 
-                height="95px" 
-                width="95px">
+                <a href="#top">
+                    <img 
+                    src="img/eco-tourism.png" 
+                    height="95px" 
+                    width="95px">
+                </a>
             </button>
 
             <button class="circlevk" style="
             top: 13%;
             left: 76%;">
             <!--Иконка ВК-->
-                <img 
-                src="img/vk.png"
-                height="60px" 
-                width="60px">
+                <a href="https://vk.com/id218449219" target="_blank">
+                    <img 
+                    src="img/vk.png"
+                    height="60px" 
+                    width="60px">
+                </a>
+                
             </button>
 
             <button class="circletg" style="
             top: 13%;
             left: 83%;">
             <!--Иконка телеграма-->
-                <img 
-                src="img/paper.png"
-                height="60px" 
-                width="60px">
+                <a href="https://t.me/kar_mam" target="_blank">
+                    <img 
+                    src="img/paper.png"
+                    height="60px" 
+                    width="60px">
+                </a>
+                
             </button>  
 
             <!--Полигон для названия сайта-->
@@ -57,237 +83,152 @@
             top: 13%;
             left: 54%;">
             <!--Иконка для поиска (лупа)-->
+                <input type="text">
                 <img 
                 src="img/search-interface-symbol.png"
                 height="40px"
                 width="40px"
                 style="margin-left: 600px;">
             </div>
+        </header>
+        <main>
+            <section class="first-section">
+                <div class="overlay"></div>
+    
+                <input type="checkbox" id="menu-toggle">
+                <label for="menu-toggle" class="toggle">
+                    <span class="choose_a_tour">Choose a tour</span>
+                    <span class="close">Close</span>
+                </label> 
+    
+                <!--Круг по центру-->
+                <div class="bigcircle">
+                    <!--Лого сайта (большое)-->
+                        <img src="img/eco-tourism.png" 
+                        height="220px"
+                        width="220px">
+                </div>
+    
+                <h2 class="h2" style="
+                top: 65%;
+                left: 35%;"
+                >EcoTurism in nature reserves and national parks of Russia</h2> 
+                
+                <!-- Блок для меню выбора опций -->
+                <div class="slide">
+                    <h2 style="
+                        font-size: 200;
+                        top: 25%;
+                        left: 50%;
+                        color: black;
+                        transform: translate(-50%, -50%);
+                        ">Choose a tour
+                        </h2>
+                    <ul>
+                        <li>
+                            <button class="rectangle4" 
+                            style="
+                            height: 50px;
+                            width: 250px;
+                            left: 11%;
+                            top: 200%;">
+                                <h3 style="
+                                    font-size: 30px;">
+                                    All types of turism</h3>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="rectangle4"
+                            style="
+                            height: 50px;
+                            width: 250px;
+                            left: 30%;
+                            top: 200%;">
+                                <h3 style="
+                                    font-size: 30px;">
+                                    All regions</h3>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="rectangle6"
+                            style="
+                            height: 50px;
+                            width: 110px;
+                            left: 45%;
+                            top: 200%;">
+                                <h3 style="
+                                    font-size: 30px;">
+                                    From</h3>
+                            </button>
+    
+                            <button class="rectangle5"
+                            style="
+                            height: 50px;
+                            width: 160px;
+                            left: 56%;
+                            top: 200%;">
+                                <h3 style="
+                                    font-size: 30px;">
+                                    To</h3>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="rectangle4"
+                            style="
+                            height: 50px;
+                            width: 250px;
+                            left: 74%; 
+                            width: 310px;">
+                                <h3 style="
+                                    font-size: 30px;">
+                                    To everyone</h3>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="rectangle4"
+                            style="
+                            height: 50px;
+                            width: 250px;
+                            left: 95%;">
+                                <h3 style="
+                                    font-size: 30px;">
+                                    All seasons</h3>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="rectangle3" 
+                            style="
+                            height: 90px;
+                            width: 300px;
+                            top: 200px;
+                            left: 40%;
+                            background: none;
+                            border: 3px solid black">
+                                <h3 style="
+                                color: black">Clear the filter</h3>
+                            </button> 
+                        </li>
+    
+                        <li>
+                            <button class="rectangle3" 
+                            style="
+                            height: 90px;
+                            width: 300px;
+                            top: 200px;
+                            left: 60%;
+                            background-color: rgba(50, 50, 50, 255);">
+                                <h3 style="color: white">
+                                Choose</h3>
+                            </button>  
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
 
-
-            <input type="checkbox" id="menu-toggle">
-            <label for="menu-toggle" class="toggle">
-                <span class="choose_a_tour">Choose a tour</span>
-                <span class="close">Close</span>
-            </label> 
-
-            <!--Круг по центру-->
-            <div class="bigcircle">
-                <!--Лого сайта (большое)-->
-                    <img src="img/eco-tourism.png" 
-                    height="220px"
-                    width="220px">
-            </div>
-
-            <h2 class="h2" style="
-            top: 65%;
-            left: 35%;"
-            >EcoTurism in nature reserves and national parks of Russia</h2> 
-            
-            <!-- Блок для меню выбора опций -->
-            <div class="slide">
-                <h2 style="
-                    font-size: 200;
-                    top: 25%;
-                    left: 50%;
-                    color: black;
-                    transform: translate(-50%, -50%);
-                    ">Choose a tour
-                    </h2>
-                <ul>
-                    <li>
-                        <button class="rectangle4" 
-                        style="
-                        height: 50px;
-                        width: 250px;
-                        left: 11%;
-                        top: 200%;">
-                            <h3 style="
-                                font-size: 30px;">
-                                All types of turism</h3>
-                        </button>
-                    </li>
-                    <li>
-                        <button class="rectangle4"
-                        style="
-                        height: 50px;
-                        width: 250px;
-                        left: 30%;
-                        top: 200%;">
-                            <h3 style="
-                                font-size: 30px;">
-                                All regions</h3>
-                        </button>
-                    </li>
-                    <li>
-                        <button class="rectangle6"
-                        style="
-                        height: 50px;
-                        width: 110px;
-                        left: 45%;
-                        top: 200%;">
-                            <h3 style="
-                                font-size: 30px;">
-                                From</h3>
-                        </button>
-
-                        <button class="rectangle5"
-                        style="
-                        height: 50px;
-                        width: 160px;
-                        left: 56%;
-                        top: 200%;">
-                            <h3 style="
-                                font-size: 30px;">
-                                To</h3>
-                        </button>
-                    </li>
-                    <li>
-                        <button class="rectangle4"
-                        style="
-                        height: 50px;
-                        width: 250px;
-                        left: 74%; 
-                        width: 310px;">
-                            <h3 style="
-                                font-size: 30px;">
-                                To everyone</h3>
-                        </button>
-                    </li>
-                    <li>
-                        <button class="rectangle4"
-                        style="
-                        height: 50px;
-                        width: 250px;
-                        left: 95%;">
-                            <h3 style="
-                                font-size: 30px;">
-                                All seasons</h3>
-                        </button>
-                    </li>
-                    <li>
-                        <button class="rectangle3" 
-                        style="
-                        height: 90px;
-                        width: 300px;
-                        top: 200px;
-                        left: 40%;
-                        background: none;
-                        border: 3px solid black">
-                            <h3 style="
-                            color: black">Clear the filter</h3>
-                        </button> 
-                    </li>
-
-                    <li>
-                        <button class="rectangle3" 
-                        style="
-                        height: 90px;
-                        width: 300px;
-                        top: 200px;
-                        left: 60%;
-                        background-color: rgba(50, 50, 50, 255);">
-                            <h3 style="color: white">
-                            Choose</h3>
-                        </button>  
-                    </li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- Вторая страница -->
-        <section class="second-section">
-
-           <h1 class="about-title">About us</h1>
-
-           <div class="info-container">
-            <p class="info-font">Escape the ordinary and discover the extraordinary with EcoTravel. 
-                We specialize in creating thrilling and unforgettable ecotourism 
-                experiences that connect you with the raw beauty and wonder of nature. 
-                Whether you’re seeking a challenging trek through lush rainforests, 
-                a peaceful kayaking trip along pristine coastlines, or 
-                a wildlife safari in untouched wilderness, we have the perfect adventure for you. 
-                Experience nature’s magic while supporting responsible and sustainable tourism.</p>
-           </div>
-
-           <!-- Блоки с информацией -->
-           <div class="about-circle" style="
-           top: 22%;
-           left: 41%;">
-                <img src="img/image (2).png" 
-                style="
-                height: 90px;
-                width: 90px;">
-           </div>
-
-           <div class="about-rect" style="
-           top: 22%;
-           left: 48%;">
-                <p class="about-font-d" style="
-                    left: 25%;
-                    top: -20%;
-                    ">236</p>
-                <p class="about-font-l" style="
-                top: 27%;">Specially protected natural areas</p>
-           </div>
-
-           <div class="about-circle" style="
-           top: 22%;
-           left: 65%;">
-                <img src="img/image.png" style="
-                height: 70px;
-                width: 70px;">
-           </div>
-           
-           <div class="about-rect" style="
-           top: 22%;
-           left: 72%;">
-                <p class="about-font-d" style="
-                    left: 12%;
-                    top: -20%;"
-                >1074</p>
-                <p class="about-font-l" style="
-                top: 27%;">Interesting objects and points of attraction</p>
-           </div>
-
-           <div class="about-circle" style="
-           top: 53%;
-           left: 41%;">
-                <img src="img/image (3).png" 
-                style="
-                height: 100px;
-                width: 100px;">
-           </div>
-
-           <div class="about-rect" style="
-           top: 53%;
-           left: 48%;">
-                <p class="about-font-d" style="
-                    left: 23%;
-                    top: -20%;
-                    ">763</p>
-                <p class="about-font-l" style="
-                top: 27%;">Tourist routes</p>
-           </div>
-
-           <div class="about-circle" style="
-           top: 53%;
-           left: 65%;">
-                <img src="img/image (1).png" style="
-                height: 70px;
-                width: 70px;">
-           </div>
-           
-           <div class="about-rect" style="
-           top: 53%;
-           left: 72%;">
-                <p class="about-font-d" style="
-                    left: 25%;
-                    top: -20%;"
-                >2k+</p>
-                <p class="about-font-l" style="
-                top: 27%;">Submitted applications</p>
-           </div>
-        </section> 
+        <footer>
+            <p class="box">&copy 2025</p>
+        </footer>
+        
     </body>
 </html>

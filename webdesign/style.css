@@ -5,14 +5,14 @@
 
 h1 {
     font-family: 'Lancelot';
-    font-size: 50px;
+    font-size: 2vw;
     font-weight: 100;
 }
 
 h2 {
     font-family: 'Lancelot';
     color: rgb(255, 255, 255);
-    font-size: 60px;
+    font-size: 3vw;
     font-weight: 100;
     position: absolute;
     display: flex;
@@ -40,13 +40,14 @@ h3 {
 }
 
 .circle {
-    height: 130px;
-    width: 130px;
+    height: 6vw;
+    width: 6vw;
     background-color: rgba(217, 217, 217, 255);
     border-radius: 50%;
     border: none;
     position: fixed;
     transform: translate(-50%, -50%);
+    aspect-ratio: 1 / 1;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -55,8 +56,8 @@ h3 {
 }
 
 .circlevk, .circletg {
-    height: 90px;
-    width: 90px;
+    height: 4vw;
+    width: 4vw;
     background-color: rgba(217, 217, 217, 255);
     border-radius: 50%;
     border: none;
@@ -70,8 +71,8 @@ h3 {
 }
 
 .bigcircle{
-    height: 300px;
-    width: 300px;
+    height: 15vw;
+    width: 15vw;
     background-color: rgba(217, 217, 217, 255);
     border-radius: 50%;
     position: absolute;
@@ -201,8 +202,8 @@ input {
 .toggle {
     font-family: 'Lancelot';
     position: absolute;
-    height: 90px;
-    width: 300px;
+    height: 10vh;
+    width: 15vw;
     z-index: 1;
     top: 85%;
     left: 50%;

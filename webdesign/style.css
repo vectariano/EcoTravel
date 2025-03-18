@@ -47,7 +47,6 @@ h3 {
     border: none;
     position: absolute;
     transform: translate(-50%, -50%);
-    aspect-ratio: 1 / 1;
     display: flex;
     align-items: center;
     justify-content: center;

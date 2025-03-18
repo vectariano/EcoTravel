@@ -95,6 +95,16 @@ h3 {
     justify-content: center;
 }
 
+.rectanglesearch input[type=text] {
+    width: 80%; /* Ensures the input has enough space */
+    padding: 10px;
+    border: none;
+    font-size: 17px;
+    outline: none;
+    color: black; /* Ensure text is visible */
+    background: rgba(217, 217, 217, 255); /* Match the parent background */
+}
+
 .rectanglesearch button {
     background: none;
     border: none;
@@ -177,14 +187,14 @@ h3 {
 .slide ul {
     list-style: none;
     position: absolute;
-    top: 40%;
-    left: 50%;
+    top: 38vh;
+    left: 47vw;
     transform: translate(-50%, -50%);
     text-align: center;
     padding: 0;
     margin: 0;
     display: flex;
-    gap: 300px;
+    gap: 15vw;
     justify-content: center;
 }
 
@@ -218,7 +228,7 @@ input {
 }
 
 
-.overlay {
+/* .overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -227,7 +237,7 @@ input {
     background-color: rgba(0, 0, 0, 0.6); 
     z-index: -1; 
     display: none; 
-}
+} */
 
 .toggle:hover {
     filter: brightness(80%);

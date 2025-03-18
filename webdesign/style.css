@@ -45,7 +45,7 @@ h3 {
     background-color: rgba(217, 217, 217, 255);
     border-radius: 50%;
     border: none;
-    position: fixed;
+    position: absolute;
     transform: translate(-50%, -50%);
     aspect-ratio: 1 / 1;
     display: flex;
@@ -292,33 +292,36 @@ input:checked ~ .bigcircle, input:checked ~ .h2 {
 .about-title {
     position: relative;
     transform: translate(-50%);
-    top: 5%;
-    left: 50%;
+    top: 10vh;
+    left: 50vw;
     color: #374a53;
     
 }
 
 .info-container {
     position: relative;
-    top: 20%;
-    left: 5%;
+    top: 25vh;
+    left: 5vw;
     background-color: white;
-    height: 520px;
-    width: 420px;
-    border-radius: 15px;
+    height: 46vh;
+    width: 23vw;
+    border-radius: 1vw;
     justify-content: center;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-top: 2vh;
+    padding-left: 1.5vw;
+    padding-right: 1.5vw;
+    padding-bottom: 1vh;
 }
 
 .info-font {
     font-family: 'Lancelot';
-    font-size: 30px;
+    font-size: 1.6vw;
+    font-weight: 100;
 }
 
 .about-circle {
-    height: 100px;
-    width: 100px;
+    height: 5vw;
+    width: 5vw;
     background-color: #2b3f48;
     border-radius: 50%;
     border: none;
@@ -329,14 +332,14 @@ input:checked ~ .bigcircle, input:checked ~ .h2 {
 }
 
 .about-rect {
-    height: 220px;
-    width: 120px;
+    height: 18vh;
+    width: 5.5vw;
     background: linear-gradient(to bottom ,
     #2b3f48 0%,
     #2b3f48 35%,
     white 35%,
     white 100%);
-    padding: 15px;
+    padding: 0.8vw;
     position: absolute;
     border-radius: 20px;
     justify-content: center;
@@ -345,7 +348,7 @@ input:checked ~ .bigcircle, input:checked ~ .h2 {
 .about-font-d {
     position: absolute;
     font-family: 'Lancelot';
-    font-size: 60px;
+    font-size: 2.8vw;
     color: white;
     z-index: 1;
 }
@@ -355,5 +358,5 @@ input:checked ~ .bigcircle, input:checked ~ .h2 {
     position: absolute;
     
     font-family: 'Lancelot';
-    font-size: 30px;
+    font-size: 1.4vw;
 }
